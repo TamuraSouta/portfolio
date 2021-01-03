@@ -1,0 +1,364 @@
+/*css*/
+body {
+ margin: 0;
+  font-weight: 400;
+  height: 280px 180px;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #5983ff;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+h3:before, h3:after{
+  content: "";
+  background-color: #616161;
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  margin: 0 6rem;
+  vertical-align: middle;
+}
+
+
+
+.section-title {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.gray-section {
+  background: #f4f4f4;
+  color: #888;
+}
+/*--header--*/
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+}
+
+.header-menu-right a {
+  color: #323A45;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header-menu-right a:hover {
+  color: #5983ff;
+  transition: color .3s;
+}
+
+/*--main--*/
+.login-modal-wrapper, .signup-modal-id {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #a2c3d9;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input, .renge option{
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d7d7d8;
+  border-radius: 5px;
+}
+
+.next {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #fac536;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  margin: 3% auto;
+  width: 80%;
+  display: none;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.text-active {
+  display: block;
+}
+.text-active {
+  display: block;
+}
+
+.contens h1 {
+   border-radius: 10px;
+   font-size: 40px;
+   color: rgba(30, 131, 131, 0.93);
+   height: 40px;
+   margin: auto;
+   width:80%;
+   padding: 0;
+   padding-bottom: 10px;
+   background-color: rgba(85, 255, 111, 0.3);
+}
+.contens h2 {
+   font-size: 30px;   
+}
+.contens p {
+   font-size: 20px;   
+}
+
+.contens {
+    display: block;
+    padding: 100px 0 40px 0;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 0;
+    background-image: url();
+    background-size:cover;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+}
+
+@keyframes cloudMove {
+    0% {background-position: 0 0, 0 0;}
+    50% {background-position: 40px 0, 80px 0;}
+    100% {background-position: 0 0, 0 0;}
+}
+.conten{
+    border-radius: 10px;
+    padding:40px 0; 
+    margin:100px auto;
+    width: 80%;
+    height: auto;
+}
+ .fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.index-btn-wrapper {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}
+
+
+.serviet {
+    
+    margin-top: 0;
+    margin-left: 0;
+    background-image: url(https://backgrounds-free.com/highresolution/101-free-backgrounds.png);
+    background-color:rgba(255, 255, 255, 0.86);
+    background-blend-mode:lighten;
+}
+span{
+    color:crimson;
+    font-size: 30px;
+}
+
+.diet {
+    background-image: url(https://backgrounds-free.com/highresolution/246-free-backgrounds.png);
+    background-color:rgba(255, 255, 255, 0.77);
+    background-blend-mode:lighten;
+}
+
+.money{
+    margin-right: 0;
+    background-image: url(https://i.pinimg.com/750x/f7/5f/2b/f75f2b741e000eda3f398f42495a202f.jpg);
+    background-size:cover;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+}
+
+.character {
+    background-image: url(https://co-jin.net/wp-content/uploads/2014/10/tech-light-background.jpg);
+    background-size:cover;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+}
+
+footer p {
+  
+  color: #b3aeb5;
+  font-size: 30px;
+}
+
+footer {
+  background-image: url(http://flode-design.com/f/f_weed16/f_weed160.png);
+　background-color: rgb(127, 255, 212);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#main-img {
+    background-image: url("https://4.bp.blogspot.com/-GY783_04Xsk/VpjBpgEivII/AAAAAAAA25s/G8MR3MGOLkE/s1600/bg_natural_sky.jpg");
+    animation: cloudMove 8s infinite;
+}
+
+.2 {
+    display: none;
+}
+
+#user-info {
+    display: none;
+}
+
