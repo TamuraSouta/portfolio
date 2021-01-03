@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<hader>
+    <title>homepage</title>
+    <meta charset="utf-8">      
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</hader>
+<body>
+   <header>
+      <div class="container">
+        <div class="header-title">
+          <div id="top-btn" class="header-logo">ServIet</div>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a class="login" id="login-show">ログイン</a>
+            </li>
+            <li>
+              <a class="btn signup signup-show">新規登録</a>
+            </li>
+            <li>
+                <a href="#what-serviet">ServIetとは</a>
+            </li>
+            <li>
+                <a href="#diet">ダイエットが続く</a>
+            </li>
+            <li>
+                <a href="#money">貯金ができる</a>
+            </li>
+            <li>
+              <a href="#character">ゲームキャラクター</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+    <form action="#">
+    <div class="signup-modal-id" id="signup-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times" id="clearForm"></i>
+      </div>
+      <div id="signup-form">
+        <h2>ServIet ID新規登録</h2>
+            <div class="new-user user-id 1"　>
+            <input type="text" class="form-control" placeholder="名前" name="username"　maxlength="8" required><input type="text" class="form-control" placeholder="ユーザーID　(半角英数字のみ)" name="userid"　maxlength="8" onInput="checkForm(this)" required><input type="password" class="form-control" placeholder="パスワード" name="pass"　maxlength="8" required><input type="password"　class="form-control" placeholder="再パスワード確認" name="repass" required><div class="next index-number" id="2">次へ</div>
+            </div>
+          <div class="new-user user-info 2" id="user-info"><input type="number" class="form-control" name="old" placeholder="年齢" maxlength="3" max="100" required><div class="radio-inline form-control"><label for="man">男性<input width="20px" type="radio" value="1" name="gender" id="man"></label></div><div class="radio-inline form-control"><label for="woman">女性<input width="20px" type="radio" value="2" name="gender" id="woman"></label></div><input type="number" class="form-control" name="weight" placeholder="体重" maxlength="3" max="200" required><input type="number" class="form-control" name="height" placeholder="身長" maxlength="3" max="200" required><div class="next index-number" id="3">次へ</div></div>
+          <div class="new-user user-info 3" id="user-info">
+          <input type="text" class="form-control" name="future" placeholder="瘦せたらしたいこと" maxlength="20" required><input type="text" class="form-control" name="pet-name" placeholder="ペットの名前" maxlength="8" required>
+          <div class="renge form-control">
+          <p class="box">成長期間</p>
+          <select class="box" name="example">
+              <option name="1" required>１週間</option>
+              <option name="2">１ヶ月</option>
+              <option name="3">３ヶ月</option>
+          </select>
+          
+          </div>
+              <input type="submit" class="next" value="登録" /></div>
+          <div class="index-btn-wrapper">
+           <div class="index-number index-btn" id="1">1</div>
+           <div class="index-number index-btn" id="2">2</div>
+           <div class="index-number index-btn" id="3">3</div>
+           </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  <div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="login-form">
+        <h2>ServIet ログイン</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="ServIet ID">
+          <input class="form-control" type="password" placeholder="パスワード">
+           <input type="submit" class="next" value="ログイン" />
+        </form>
+      </div>
+    </div>
+  </div>
+        <div class="top">
+            <div class="slider">
+                <img src="https://publicdomainq.net/images/202008/14s/publicdomainq-0047849sny.jpg" width="500" height="600" alt="">
+                <img src="https://publicdomainq.net/images/201903/31s/publicdomainq-0032970pls.jpg" width="500" height="600" alt="">
+                <img src="https://publicdomainq.net/images/201612/05s/publicdomainq-0003452cvo.jpg" width="500" height="600" alt="">
+            </div>
+           
+        </div>
+    
+    <div class="contens" id="main-img">
+        <div class="serviet conten fadein" id="what-serviet">
+        <h1>ServIetとは</h1>
+        <h2>奉仕(servise)とダイエット(diet)を掛け合わせた新感覚ダイエット育成ゲーム</h2><p>一つお聞きします。もし仮に食べたいものが、<span>０カロリー</span>しかも<span>タダ</span>で食べれたらいいと思いませんか？</p><p>もちろん、はいだと思います。ただ、それは現実的に難しいです。<br>そこでServIetでは、キャラクターがあなたの食べたいものを代わりに食べてくれることで成長し、<br>あなたはキャラクターが成長することで食べたい欲求が満たされ<span>食事制限</span>が続けられて<br><span>途中挫折戦死者</span>を<span>救う</span>新感覚<span>育成ゲーム</span>です<p>
+        </div>
+        <div class="diet conten fadein" id="diet">
+        <h1>なぜダイエットは続かないんでしょうか</h1>
+        <h2>ダイエットが<span>続かない理由</span>は、モチベーションの低下。つまり<span>飽き</span>です</h2>
+        <p>つい食べ過ぎたり、つい間食してしまって<span>太ってしまった</span>なんて経験はありませんか？<br>皆さん経験あると思います。もちろん私もあります。<br>では、そんな私たちは<span>意思が弱い
+        </span>のでしょうか？それは、<span>違います</span>。<br>我慢することで<span>ストレス</span>がたまり、それがモチベーションを減り最後には<span>挫折</span>してしまうのです。<br>そこで、あなたの<span>我慢</span>で誰かが喜んでくれたら<span>うれしく</span>ないですか？<br>ServIetではあなたのおかげで成長できるキャラクターが一緒に頑張ってくれます。</p>
+       </div>
+       <div class="money conten fadein" id="money">
+           <h1>ServIetは確実にお金がたまります！</h1>
+           <h2>なぜならあなたは食べずにお金を使ってないからです。</h2>
+           <p>普段なら買っていただろうポテトチップス。<br>しかし、あなたは買わずにキャラクターにあげることによって、<br>使っていたであろうお金を使わなったため、<span>必然的に貯金ができます。</span><br>さらにServIetでは、<span>我慢貯金</span>がキャラクターの服やおもちゃを買うことができるので、<br>我慢が<span>苦痛から喜び</span>に代わるはずです。</p>
+       </div>
+        　<div class="character conten fadein" id="character"><h1>ゲームキャラクター</h1>
+         <h2>あなたがいなければ成長できません</h2>
+         <p>ゲームキャラクターはあなたが我慢するたび、<br>あなたの目標に合わせて４段階に成長し最終的には子供も生まれるかもしれません。<br>キャラクターは<br><span>あなたの喜びが最大の喜びです</span><br>あなたとキャラクターとServIetで<span>昨日の自分</span>とおさらばしましょう</p>
+     </div>
+    </div>
+       
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p>@CREA汰</p>
+      </div>
+    </footer>
+    </body>
+    <script type="text/javascript">
+         $('#top-btn').click(function(){
+             $('html,body').animate({ 
+                 'scrollTop': 0 
+             }, 500);
+         });
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+        $('#login-show').click(function() {
+            $('#login-modal').fadeIn();
+        });
+
+        $('.signup-show').click(function() {
+            $('#signup-modal').fadeIn();
+        });
+
+        $('.close-modal').click(function() {
+            $('#login-modal').fadeOut();
+            $('#signup-modal').fadeOut();
+        });     
+        $('.index-number').on('click',function(){
+            $('.new-user').not($('.'+$(this).attr('id'))).hide();
+            $('.'+$(this).attr('id')).show();
+        });
+        
+        $('.lesson-hover').hover(
+            function() {
+                $(this).find('.text-contents').addClass('text-active'); 
+            },
+            function() {
+                $(this).find('.text-contents').removeClass('text-active');
+            }
+        );
+        $('#top-btn').click(function(){
+            $('html,body').animate({ 
+                'scrollTop': 0 
+            }, 500);
+        });      
+        $('header a').click(function(){
+        var id=$(this).attr('href');
+        var position = $(id).offset().top;
+        $('html, body').animate({
+        'scrollTop': position 
+        }, 500,20);
+        });
+
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var elemPos = $(this).offset().top,
+            scroll = $(window).scrollTop(),
+            windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 100){
+                $(this).addClass('scrollin');
+            }else{
+                $(this).removeClass('scrollin');
+            }
+        });
+    });
+        $(function(){
+     $('input[name="num_only"]').on('input', function(){
+          check_numtype($(this));
+     });
+});
+
+function checkForm($this)
+{
+    var str=$this.value;
+    while(str.match(/[^A-Z^a-z\d\-]/))
+    {
+        str=str.replace(/[^A-Z^a-z\d\-]/,"");
+    }
+    $this.value=str;
+}
+
+    </script>
+</html>
